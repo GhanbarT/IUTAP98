@@ -7,8 +7,8 @@ using namespace std;
 #define FPLAYER_H
 class Football_player :public Athlete
 {
-	friend void to_fplayer(Athlete);
-	friend Athlete from_fplayer();
+	friend void to_fplayer(Football_player);
+	friend Football_player from_fplayer();
 	friend void up_fplayer();
 public:
 	Football_player(int, string, string, string, string, string);
